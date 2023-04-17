@@ -52,7 +52,7 @@ def movie_post():
         'comment': comment_receive,
     }
 
-    db.movie.insert_one(doc)
+    db.movieS.insert_one(doc)
 
     return jsonify({'msg':'POST request!'})
 
